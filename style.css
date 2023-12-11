@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align : center;
+    height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+}
+
+.menu {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: pink; /* 봄 */
+}
+
+button:nth-child(2):hover {
+    background-color: lightgreen; /* 여름 */
+}
+
+button:nth-child(3):hover {
+    background-color: orange; /* 가을 */
+}
+
+button:nth-child(4):hover {
+    background-color: white; /* 겨울 */
+}
+
+.content {
+    padding: 20px;
+}
+#seasonTitle {
+    margin: 10px 0;
+}
+#seasonDisplay {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    display: inline-block;
+}
+/*봄*/
+.spring-content {
+    text-align: center;
+}
+
+.spring-content h3 {
+    font-size: 16px;
+}
+
+.spring-content iframe {
+    margin-top: 20px;
+}
+/*여름*/
+.summer-content {
+    text-align: center;
+}
+
+.summer-content h3 {
+    font-size: 16px;
+}
+
+.summer-content iframe {
+    margin-top: 20px;
+}
+/*가을*/
+.fall-content {
+    text-align: center;
+}
+
+.fall-content h3 {
+    font-size: 16px;
+}
+
+.fall-content iframe {
+    margin-top: 20px;
+}
+/*겨울*/
+.winter-content {
+    text-align: center;
+}
+
+.winter-content h3 {
+    font-size: 16px;
+}
+
+.winter-content iframe {
+    margin-top: 20px;
+}
