@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seasons Menu</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            text-align: center;
+        }
+        header {
+            background-color: #f0f0f0; /* Light gray background for the header */
+            padding: 10px;
+            font-size: 2em;
+        }
+        nav {
+            background-color: #f0f0f0; /* Light gray background for the navigation */
+            padding: 10px;
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        nav li {
+            display: inline;
+            margin-right: 10px;
+        }
+        button {
+            padding: 10px 150px;
+            font-size: 16px;
+            background: white;
+            font-size: 16px;
+            margin: 0 5px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            font-weight: bold;
+        }
+        main {
+            flex-grow: 1;
+            clear: both; /* Clear both sides to contain floats */
+        }
+        section {
+            padding: 20px; /* Add some padding for content section */
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        footer {
+            width: 100%;
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="seasonTitle">계절</h1>
+    </header>
+
+    <nav>
+        <ul id="menu">
+            <li><button onmouseover="changeButtonColor(this, '#D88589')" onmouseout="resetButtonColor(this)" onclick="changePage('spring')">봄</button></li>
+            <li><button onmouseover="changeButtonColor(this, '#466D1D')" onmouseout="resetButtonColor(this)" onclick="changePage('summer')">여름</button></li>
+            <li><button onmouseover="changeButtonColor(this, '#9B6B43')" onmouseout="resetButtonColor(this)" onclick="changePage('fall')">가을</button></li>
+            <li><button onmouseover="changeButtonColor(this, '#355C7D')" onmouseout="resetButtonColor(this)" onclick="changePage('winter')">겨울</button></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="content">
+           <table>
+            <tr><td><img src="https://cdn.pixabay.com/photo/2017/03/23/16/48/japanese-cherry-blossom-2168858_1280.jpg" alt="봄"></td>
+                <td><img src="https://cdn.pixabay.com/photo/2018/01/06/01/01/oak-3064187_1280.jpg" alt="여름"></td>
+                <td><img src="https://cdn.pixabay.com/photo/2013/02/20/11/30/autumn-83761_1280.jpg" alt="가을"></td>
+                <td><img src="https://cdn.pixabay.com/photo/2017/02/10/03/12/winter-2054297_1280.jpg" alt="겨울"></td></tr>
+           </table>
+            <article id="seasonDisplay"></article>
+            <script src="script.js"></script>
+        </section>
+    </main>
+
+    <footer>
+        <small>컴퓨터공학부 202200850 김은서 <br>
+            1028es@naver.com</small>
+    </footer>
+   
+</body>
+</html>
