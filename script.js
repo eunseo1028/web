@@ -44,13 +44,11 @@ function changePage(season) {
     } else if (season === 'winter') {
         window.location.href = 'winter.html';
     } else {
-        // content 요소에 대한 조치도 필요
         const contentElement = document.getElementById('content');
         if (contentElement) {
             contentElement.innerHTML = `선택한 계절은 ${season}입니다.`;
         }
     }
-
     // 페이지 변경 시 상단 제목 갱신
     document.getElementById('seasonTitle').innerHTML = season;
 }
