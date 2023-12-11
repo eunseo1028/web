@@ -29,23 +29,6 @@ button {
     margin: 0 5px;
     cursor: pointer;
 }
-
-button:hover {
-    background-color: pink; /* 봄 */
-}
-
-button:nth-child(2):hover {
-    background-color: lightgreen; /* 여름 */
-}
-
-button:nth-child(3):hover {
-    background-color: orange; /* 가을 */
-}
-
-button:nth-child(4):hover {
-    background-color: white; /* 겨울 */
-}
-
 .content {
     padding: 20px;
 }
